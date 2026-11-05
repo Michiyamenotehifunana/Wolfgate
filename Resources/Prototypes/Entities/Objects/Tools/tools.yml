@@ -483,12 +483,12 @@
     maxCharges: 125 # mono 30 -> 125
     charges: 125 # mono 30 -> 125
   - type: Sprite
-    sprite: _NF/Objects/Tools/rcd.rsi # Frontier
+    sprite: _WF/Objects/Tools/rcd.rsi # Wolfgate
     state: icon
   - type: Item
     size: Normal
   - type: Clothing
-    sprite: _NF/Objects/Tools/rcd.rsi # Frontier
+    sprite: _WF/Objects/Tools/rcd.rsi # Wolfgate
     quickEquip: false
     slots:
     - Belt
@@ -557,10 +557,10 @@
       - RapidConstructionTool
   # Monolith changes end
   - type: Sprite
-    sprite: _NF/Objects/Tools/rcd.rsi # Frontier
+    sprite: _WF/Objects/Tools/rcd.rsi # Wolfgate
     state: ammo
   - type: Item
-    sprite: _NF/Objects/Tools/rcd.rsi # Frontier
+    sprite: _WF/Objects/Tools/rcd.rsi # Wolfgate
     heldPrefix: ammo
   - type: PhysicalComposition
     materialComposition:

@@ -6,14 +6,15 @@
   abstract: true
   components:
   - type: ShipRepairTool
+# Wolfgate START: Replace SRD sprite with shipyard RCD sprite
   - type: Sprite
-    scale: 0.8, 0.8
-    sprite: _Mono/Objects/Tools/repair_device_item.rsi
-    state: item
+    sprite: _WF/Objects/Tools/rcdshipyard.rsi
+    state: icon
   - type: Item
-    sprite: _Mono/Objects/Tools/repair_device.rsi
     size: Normal
   - type: Clothing
+    sprite: _WF/Objects/Tools/rcdshipyard.rsi
+# Wolfgate END
     quickEquip: false
     slots:
     - Belt
@@ -105,10 +106,10 @@
       tags:
       - ShipRepairTool
   - type: Sprite
-    sprite: _NF/Objects/Tools/rcd.rsi
-    state: ammo-shipyard
+    sprite: _WF/Objects/Tools/rcdshipyard.rsi # Wolfgate
+    state: ammo
   - type: Item
-    heldPrefix: ammo-shipyard
+    heldPrefix: ammo
   - type: PhysicalComposition
     materialComposition:
       Steel: 100
