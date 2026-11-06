@@ -6,15 +6,15 @@
   abstract: true
   components:
   - type: ShipRepairTool
-# Wolfgate START: Replace SRD sprite with shipyard RCD sprite
+# WOLFGATE(Resprites) START: SRD uses the shipyard RCD sprite
   - type: Sprite
-    sprite: _WF/Objects/Tools/rcdshipyard.rsi
+    sprite: _WF/Resprites/_WF/Objects/Tools/rcdshipyard.rsi
     state: icon
   - type: Item
     size: Normal
   - type: Clothing
-    sprite: _WF/Objects/Tools/rcdshipyard.rsi
-# Wolfgate END
+    sprite: _WF/Resprites/_WF/Objects/Tools/rcdshipyard.rsi
+# WOLFGATE END
     quickEquip: false
     slots:
     - Belt
@@ -84,6 +84,10 @@
     scale: 0.6, 0.6
     sprite: _Mono/Objects/Tools/repair_device_item.rsi
     state: prefracture
+# WOLFGATE(Resprites) START: keep the old SRD inhands, the base now uses the shipyard RCD
+  - type: Item
+    sprite: _Mono/Objects/Tools/repair_device.rsi
+# WOLFGATE END
   - type: LimitedCharges
     maxCharges: 800
     charges: 50
@@ -106,10 +110,10 @@
       tags:
       - ShipRepairTool
   - type: Sprite
-    sprite: _WF/Objects/Tools/rcdshipyard.rsi # Wolfgate
-    state: ammo
+    sprite: _WF/Resprites/_WF/Objects/Tools/rcdshipyard.rsi # WOLFGATE(Resprites): SRD uses the shipyard RCD sprite
+    state: ammo # WOLFGATE(Resprites): SRD uses the shipyard RCD sprite
   - type: Item
-    heldPrefix: ammo
+    heldPrefix: ammo # WOLFGATE(Resprites): SRD uses the shipyard RCD sprite
   - type: PhysicalComposition
     materialComposition:
       Steel: 100
